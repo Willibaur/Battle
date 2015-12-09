@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-  <html>
-<div>
-  <%=@player_1_name%> vs. <%=@player_2_name%>
-</div>
-
-<div>
-    <%=@player_2_name%>: 77HP
-</div>
-  </html>
+<html>
+  <body>
+    <div>
+      <%=@player_1_name%> vs. <%=@player_2_name%>
+    </div>
+    <div>
+      <%=@player_2_name%>: 77HP
+    </div>
+    <div>
+      <form action="/attack">
+       <input type="submit" value="Attack">
+      </form>
+    </div>
+  </body>
+</html>
