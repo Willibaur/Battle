@@ -5,6 +5,6 @@
 feature 'Display Player 2 hit points' do
   scenario 'displaying P2 HP' do
     sign_in_and_play
-    expect(page).to have_content 'Goliath: 77HP'
+    expect(page).to have_content 'Goliath: 60HP'
   end
 end
