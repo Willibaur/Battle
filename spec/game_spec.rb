@@ -8,4 +8,10 @@ describe Game do
   it 'attacks a player' do
     expect(game).to respond_to(:attack)
   end
+
+  it 'switches players' do
+    allow(dummy1).to receive(:hp_deductor)
+    game.attack(dummy1)
+    expect(game.turn?).to be false
+  end
 end

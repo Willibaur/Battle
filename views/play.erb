@@ -8,6 +8,13 @@
       <%= @game.player2.name %>: <%= @game.player2.hit_points %>HP
     </div>
     <div>
+      <% if @game.player_one_turn %>
+      <%= @game.player1.name %>'s turn
+      <% else %>
+      <%= @game.player2.name %>'s turn
+      <% end %>
+    </div>
+    <div>
       <form action="/attack">
        <input type="submit" value="Attack">
       </form>

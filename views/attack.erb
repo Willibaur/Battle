@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <h2>
-    <%= @game.player1.name %> attacked <%= @game.player2.name%>
+    <div>
+      <% if @game.player_one_turn %>
+      <%= @game.player2.name %> attacked
+      <% else %>
+      <%= @game.player1.name %> attacked
+      <% end %>
+    </div>
   </h2>
   <h2>
     <%= @game.player2.name %>: <%= @game.player2.hit_points %>HP
