@@ -16,16 +16,9 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(goliath).to receive(:receive_damage)
-      david.attack(goliath)
-    end
-  end
-
-  describe '#receive_damage' do
+  describe '#hp_deductor' do
     it 'reduces player hit points' do
-      expect {david.receive_damage}.to change {david.hit_points}.by(-10)
+      expect {david.hp_deductor(10)}.to change {david.hit_points}.by(-10)
     end
   end
 end
