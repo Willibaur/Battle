@@ -17,14 +17,7 @@
       <%= @game.player2.name %>'s turn
       <% end %>
     </div>
-    <div>
-      <% if @game.player1.hit_points == 0 %>
-      <%= @game.player1.name %> loses
-      <% elsif @game.player2.hit_points == 0%>
-      <%= @game.player2.name %> loses
-      <% end %>
-    </div>
-
+    
     <div>
       <form action="/attack">
        <input type="submit" value="Attack">

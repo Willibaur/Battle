@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<div>
+  <% if @game.player1.hit_points == 0 %>
+  <%= @game.player1.name %> loses
+  <% elsif @game.player2.hit_points == 0%>
+  <%= @game.player2.name %> loses
+  <% end %>
+</div>
+
+<a href="/">Play again</a>
+</html>

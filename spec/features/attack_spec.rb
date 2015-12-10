@@ -16,7 +16,6 @@ feature 'Attacking' do
   scenario 'reduce Player 2 HP by 10' do
     sign_in_and_play
     click_button "Attack"
-    # click_link 'OK'
     expect(page).not_to have_content 'Goliath: 60HP'
     expect(page).to have_content 'Goliath: 50HP'
   end
@@ -27,6 +26,6 @@ feature 'Attacking' do
   scenario 'reduce player 1 HP' do
     sign_in_and_play
     click_button 'Attack'
-    
+
   end
 end
