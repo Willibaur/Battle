@@ -14,4 +14,5 @@ describe Game do
     game.attack(dummy1)
     expect(game.turn?).to be false
   end
+
 end

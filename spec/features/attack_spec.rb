@@ -20,4 +20,13 @@ feature 'Attacking' do
     expect(page).not_to have_content 'Goliath: 60HP'
     expect(page).to have_content 'Goliath: 50HP'
   end
+
+# As Player 1,
+# So I can start to lose a game of Battle,
+# I want Player 2's attack to reduce my HP
+  scenario 'reduce player 1 HP' do
+    sign_in_and_play
+    click_button 'Attack'
+    
+  end
 end

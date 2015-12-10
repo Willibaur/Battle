@@ -23,14 +23,14 @@ class Battle < Sinatra::Base
     erb :play
   end
 
-#vxv
+
   get '/attack' do
     @game = $game
-    $game.attack(@game.player2)
+    active_player = @game.player_one_turn ? @game.player2 : @game.player1
+    $game.attack(active_player)
     erb :attack
   end
 
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
-
