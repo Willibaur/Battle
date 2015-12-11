@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="play_styles.css">
+  </head>
 
-<h1>Here is where a brain battle start!!</h1>
+  <body>
+    <div id="header">
+      <h1>Here is where a brain battle start!!</h1>
+    </div>
 
-<form action="/names" method="post">
-  <label for="player_1_name">
-    Player 1
-    <input type="text" name="player_1_name">
-  </label>
-  <label for="player_2_name">
-    Player 2
-    <input type="text" name="player_2_name">
-  </label>
-  <input type="submit" value="Submit">
-</form>
-
+    <form action="/names" method="post">
+      <label for="player_1_name">
+        Player 1
+        <input type="text" name="player_1_name">
+      </label>
+      <label for="player_2_name">
+        Player 2
+        <input type="text" name="player_2_name">
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>

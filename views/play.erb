@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
   <body>
     <div>
       <%= @game.player1.name %> vs. <%= @game.player2.name %>
@@ -17,7 +20,7 @@
       <%= @game.player2.name %>'s turn
       <% end %>
     </div>
-    
+
     <div>
       <form action="/attack">
        <input type="submit" value="Attack">

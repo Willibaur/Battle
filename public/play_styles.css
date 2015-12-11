@@ -1,0 +1,14 @@
+body {
+  background-image: url("./images/Helix-Nebula.jpg");
+  background-size: 1920px 1100px;
+}
+
+#header {
+  font-family: cursive;
+  font-size: 30px;
+  color: #04426a;
+}
+
+form {
+  color: #065762
+}

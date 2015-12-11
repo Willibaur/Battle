@@ -26,6 +26,5 @@ feature 'Attacking' do
   scenario 'reduce player 1 HP' do
     sign_in_and_play
     click_button 'Attack'
-
   end
 end
